@@ -8,16 +8,8 @@
 #ifndef MOTOR_H
 #define	MOTOR_H
 
-#ifdef	__cplusplus
-extern "C" {
+void initMotor();
+void initSW1();
+
 #endif
-
-
-
-
-#ifdef	__cplusplus
-}
-#endif
-
-#endif	/* MOTOR_H */
 
