@@ -5,10 +5,13 @@
  * Created on October 1, 2015, 10:19 AM
  */
 
+
+
 #include <xc.h>
 
+
 void initADC(){
-    ANSELBbits.ANSB0 = 0; 
+    ANSELBbits.ANSB0 = 1; 
     AD1CON1bits.FORM = 0; // 16 unsigned integer
     AD1CON1bits.SSRC = 7; // Auto-convert mode
     AD1CON1bits.ASAM = 1; // Auto-sampling
@@ -23,6 +26,6 @@ void initADC(){
     AD1CHSbits.CH0SA = 0; // Scan AN0 at least
     IFS0bits.AD1IF = 0; // Put down ADC flag
     IPC5bits.AD1IP = 7;
-    IEC0bits.AD1IE = 1;
+    IEC0bits.AD1IE = 0;
     AD1CON1bits.ADON = 1; // turn on the ADC
 }
