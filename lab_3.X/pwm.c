@@ -30,7 +30,7 @@ void initPWM(){
     OC3CON = 0x0006; // Configure for PWM mode
     OC3CONSET = 0x8000; // Enable OC4
     
-    RPD0Rbits.RPD0R = 0b1011; // map OC4 to RD3
+    RPD0Rbits.RPD0R = 0b1100; // map OC4 to RD3
     OC1CON = 0x0000; // Turn off OC4 while doing setup.
     OC1R = 0x0000; // Initialize primary Compare Register
     OC1RS = 0x0000; // Initialize secondary Compare Register
